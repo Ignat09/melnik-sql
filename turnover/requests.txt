@@ -1,0 +1,14 @@
+ƒобавление товара(например, сыра):
+INSERT into turnover (product_name, price, sales) VALUES ('Cheese', 34, 57);
+
+¬ыбор максимального количества продаж:
+SELECT MAX(sales) FROM turnover;
+
+¬ывод сумы цен товаров:
+SELECT SUM(price) FROM turnover;
+
+¬ывод названий товаров в алфавитном пор€дке:
+SELECT product_name, price, sales FROM turnover ORDER BY product_name ASC;
+
+¬ывод товаров, продаж которых более определенного значени€(например, 110), а цены наход€тс€ в определенном диапазоне(например, от 10 до 30): 
+SELECT product_name FROM turnover WHERE sales > 110 AND price BETWEEN 10 AND 30;
